@@ -73,7 +73,23 @@ h6,
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+#topbar {
+  height: 90px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #ffffff;
+  padding: 0;
+  background: linear-gradient( #000000, #8b0000);
+  background-image: url("../assets/img/Topbar1.png");
+  background-size: cover;
+}
 
+@media (max-width: 1100px)  {
+  #topbar{
+  background-image: url("../assets/img/Topbar2.png");
+  background-size: cover;
+  }
+}
 /* 
 #topbar .contact-info i {
   font-style: normal;
@@ -118,10 +134,8 @@ h6,
   transition: all 0.5s;
   background:#8b0000;
   margin-left: -100px;
-  /* background-image: url("/blackRegrind-overlay.jpg"); */
-  /* 
-   */
-  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, .1);
 }
 
 
@@ -1422,23 +1436,5 @@ section {
     -moz-text-align-last: center;
     text-align-last: center;
     padding: 3px 0;
-  }
-}
-
-#topbar {
-  height: 90px;
-  font-size: 14px;
-  transition: all 0.5s;
-  color: #ffffff;
-  padding: 0;
-  background: linear-gradient( #000000, #8b0000);
-  background-image: url("/assets/img/Topbar1.png");
-  background-size: cover;
-}
-
-@media (max-width: 1100px)  {
-  #topbar{
-  background-image: url("/assets/img/Topbar2.png");
-  background-size: cover;
   }
 }
